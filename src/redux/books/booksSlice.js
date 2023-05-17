@@ -5,14 +5,14 @@ const initialState = {
 };
 
 const bookSlice = createSlice({
-  name: 'book',
+  name: 'books',
   initialState,
   reducers: {
-    addBook: () => {
-      // code implementation to add a book
+    addBook: (state, action) => {
+      state.bookItems.push(action.payload);
     },
-    removeBook: () => {
-      // code implementation to remove a book
+    removeBook: (state, action) => {
+      state.bookItems = state.bookItems.filter((item) => item.id === action.payload);
     },
   },
 });
