@@ -1,10 +1,22 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import BookList from './components/BookList';
+import Categories from './routes/Categories';
+import NoMatch from './routes/NoMatch';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h3>App</h3>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<BookList />} />
+          <Route path="/Categories" element={<Categories />} />
+        </Route>
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
