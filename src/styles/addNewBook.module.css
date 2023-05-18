@@ -1,0 +1,58 @@
+.addNewBookWrapper {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(228, 225, 225);
+  margin-top: 15px;
+}
+
+.addNewBookWrapperTitle {
+  color: gray;
+}
+
+.addNewBookWrapperInputs {
+  display: flex;
+  gap: 20px;
+}
+
+.addNewBookWrapperInputSeprator {
+  display: flex;
+}
+
+.addNewBookWrapperInputSeprator:nth-child(1) {
+  flex: 3;
+}
+
+.addNewBookWrapperInputSeprator:nth-child(2) {
+  flex: 2;
+}
+
+.addNewBookWrapperInputSeprator:nth-child(3) {
+  flex: 1;
+}
+
+.addNewBookWrapperInputSeprator input {
+  width: 100%;
+  height: 25px;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 5px;
+  color: gray;
+}
+
+.addNewBookWrapperInputSeprator input:focus {
+  border: 1px solid lightblue;
+  outline: none;
+}
+
+.addNewBookWrapperInputSeprator button {
+  width: 100%;
+  border: none;
+  background-color: rgb(100, 100, 245);
+  color: white;
+  font-weight: 700;
+}
+
+.addNewBookWrapperInputSeprator button:hover {
+  cursor: pointer;
+  border: 1px solid whitesmoke;
+}
