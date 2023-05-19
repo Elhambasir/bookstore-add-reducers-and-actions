@@ -116,7 +116,7 @@
   display: flex;
 }
 
-.buttons>* {
+.buttons > * {
   background-color: white;
   border: none;
   color: blue;
@@ -149,10 +149,4 @@
 .renderWrapperPercentage small {
   color: gray;
   font-weight: 700;
-}
-
-.renderWrapperCurrentStateShape {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
