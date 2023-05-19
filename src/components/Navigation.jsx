@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { NavLink } from 'react-router-dom';
 import styles from '../styles/navigation.module.css';
 

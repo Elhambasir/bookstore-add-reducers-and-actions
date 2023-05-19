@@ -1,26 +1,28 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { v4 as uuidv4 } from 'uuid';
-import { addBook } from '../redux/books/booksSlice';
+import { add, addBookToApi } from '../redux/books/booksSlice';
 import Button from './Buttons';
 import styles from '../styles/addNewBook.module.css';
 
 const AddNewBook = () => {
+  const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const dispatch = useDispatch();
+
   const data = {
-    id: uuidv4(),
+    item_id: uuidv4(),
     title,
     author,
     category: 'Science-fiction',
   };
   const handleSubmit = () => {
-    dispatch(addBook(data));
+    dispatch(addBookToApi(data));
+    dispatch(add(data));
     setTitle('');
     setAuthor('');
   };
+
   return (
     <div className={styles.addNewBookWrapper}>
       <div className={styles.addNewBookWrapperTitle}>
