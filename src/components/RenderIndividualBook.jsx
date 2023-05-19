@@ -36,7 +36,12 @@ export default function RenderIndividualBook() {
           </div>
           <div className={styles.renderWrapperCurrentState}>
             <div className={styles.renderWrapperCurrentStateShape}>
-              <h4>State</h4>
+              <div className={styles.rectangle3}>
+                <svg>
+                  <circle cx="25" cy="25" r="25" />
+                  <circle cx="25" cy="25" r="25" />
+                </svg>
+              </div>
             </div>
             <div className={styles.renderWrapperPercentage}>
               <h1>64%</h1>
