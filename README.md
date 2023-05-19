@@ -34,7 +34,7 @@
 
 # 📖 [BookStore-App] <a name="about-project"></a>
 
-**[BookStore-App]** In this project user can add and delete Books and Books are stored in the browser.
+**[BookStore-App]** In this project user can add and delete Books and Books are stored in the external API.
 
 ## 🛠 Built With <a name="HTML, CSS, Javascript and React & Redux"></a>
 
@@ -58,7 +58,7 @@
 - [x] Create a simple Bookstore web app
 - [x] Add all Your Books List
 - [x] Delete The Books which you have finished reading
-- [x] Tasks are stored in the user Browser
+- [x] Tasks are stored in the external bookstore API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
