@@ -18,7 +18,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.renderWrapperCurrentStateShape {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rectangle3 {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle3 svg {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.rectangle3 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 5;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+  -moz-transform: translate(5px, 5px);
+  -ms-transform: translate(5px, 5px);
+  -o-transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.rectangle3 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #03a9f4;
+}
+
+.rectangle3 svg circle:nth-child(2) {
+  stroke-dashoffset: -99;
+  stroke: #f3f3f3;
 }
 
 .renderWrapperCurrentChapter {
@@ -39,14 +88,15 @@
 }
 
 .btnUpdateProgress {
-  font-size: 12px;
+  font-size: 9px;
   background-color: rgb(94, 94, 230);
   color: white;
   border: none;
   padding: 5px;
-  width: 50%;
+  width: 60%;
   font-weight: 700;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .bookCategory {
@@ -66,7 +116,7 @@
   display: flex;
 }
 
-.buttons > * {
+.buttons>* {
   background-color: white;
   border: none;
   color: blue;
