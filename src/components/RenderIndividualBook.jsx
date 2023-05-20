@@ -17,7 +17,7 @@ export default function RenderIndividualBook() {
   }));
 
   return (
-    <div>
+    <div className={styles.renderContainerWrapper}>
       {booksList.map((book) => (
         <div key={book.key} className={styles.renderWrapper}>
           <div className={styles.renderWrapperBookInfo}>
@@ -44,13 +44,13 @@ export default function RenderIndividualBook() {
               </div>
             </div>
             <div className={styles.renderWrapperPercentage}>
-              <h1>64%</h1>
-              <small>Completed</small>
+              <span className={styles.percentage}>64%</span>
+              <span className={styles.completed}>Completed</span>
             </div>
           </div>
           <div className={styles.renderWrapperCurrentChapter}>
-            <h5 className={styles.currentChapterTitle}>CURRENT CHAPTER</h5>
-            <h5 className={styles.chapterTitle}>Chapter title</h5>
+            <span className={styles.currentChapterTitle}>CURRENT CHAPTER</span>
+            <span className={styles.chapterTitle}>Chapter title</span>
             <button type="button" className={styles.btnUpdateProgress}>UPDATE PROGRESS</button>
           </div>
         </div>
