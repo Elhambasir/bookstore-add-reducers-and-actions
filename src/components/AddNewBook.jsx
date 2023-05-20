@@ -24,22 +24,26 @@ const AddNewBook = () => {
   };
 
   return (
-    <div className={styles.addNewBookWrapper}>
-      <div className={styles.addNewBookWrapperTitle}>
-        <h3>ADD NEW BOOK</h3>
+    <div className={styles.renderContainerWrapper}>
+      <div className={styles.addNewBookWrapper}>
+        <div className={styles.line} />
+        <div className={styles.addNewBookWrapperTitle}>
+          <span>ADD NEW BOOK</span>
+        </div>
+        <form className={styles.addNewBookWrapperInputs}>
+          <div className={styles.addNewBookWrapperInputSeprator}>
+            <input value={title} type="text" id="title" placeholder="Book Title Here..." onChange={(e) => setTitle(e.target.value)} />
+          </div>
+          <div className={styles.addNewBookWrapperInputSeprator}>
+            <input value={author} type="text" id="name" placeholder="Author Name Here..." onChange={(e) => setAuthor(e.target.value)} />
+          </div>
+          <div className={styles.addNewBookWrapperInputSeprator}>
+            <Button type="button" className="submit" value="ADD BOOK" onClick={handleSubmit} />
+          </div>
+        </form>
       </div>
-      <form className={styles.addNewBookWrapperInputs}>
-        <div className={styles.addNewBookWrapperInputSeprator}>
-          <input value={title} type="text" id="title" placeholder="Book Title Here..." onChange={(e) => setTitle(e.target.value)} />
-        </div>
-        <div className={styles.addNewBookWrapperInputSeprator}>
-          <input value={author} type="text" id="name" placeholder="Author Name Here..." onChange={(e) => setAuthor(e.target.value)} />
-        </div>
-        <div className={styles.addNewBookWrapperInputSeprator}>
-          <Button type="button" className="submit" value="Add New" onClick={handleSubmit} />
-        </div>
-      </form>
     </div>
+
   );
 };
 

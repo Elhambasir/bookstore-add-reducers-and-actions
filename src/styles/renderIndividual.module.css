@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap');
+
 .renderWrapper {
   display: flex;
-  border: 1px solid lightgray;
-  padding: 10px;
+  border: 1px solid #e8e8e8;
   gap: 15px;
   flex-wrap: wrap;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  margin: 2.313rem 0;
+  background-color: #fff;
+}
+
+.renderContainerWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
 }
 
 .renderWrapperBookInfo {
@@ -18,63 +28,129 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+.renderWrapperCurrentStateShape {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rectangle3 {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle3 svg {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.rectangle3 svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 5;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+  -moz-transform: translate(5px, 5px);
+  -ms-transform: translate(5px, 5px);
+  -o-transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+}
+
+.rectangle3 svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #0290ff;
+}
+
+.rectangle3 svg circle:nth-child(2) {
+  stroke-dashoffset: -99;
+  stroke: #f3f3f3;
 }
 
 .renderWrapperCurrentChapter {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   justify-content: center;
 }
 
-.currentChapterTitle {
-  margin: 0;
-  color: gray;
-}
-
-.chapterTitle {
-  margin: 0;
-}
-
-.btnUpdateProgress {
-  font-size: 12px;
-  background-color: rgb(94, 94, 230);
-  color: white;
-  border: none;
-  padding: 5px;
-  width: 50%;
-  font-weight: 700;
-  border-radius: 3px;
-}
-
 .bookCategory {
-  color: gray;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+  margin: 0 2.438rem 0 0;
 }
 
 .bookTitle {
-  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+  margin: 0.188rem 20.188rem 0 0;
 }
 
 .bookAuthor {
-  margin: 0 5px 10px 5px;
-  color: blue;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  margin: 0.25rem 0 0 0.25rem;
 }
 
 .buttons {
   display: flex;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .buttons > * {
   background-color: white;
   border: none;
-  color: blue;
   outline: none;
   border-left: 1px solid rgb(211, 210, 210);
-  padding-right: 10px;
-  margin-bottom: 10px;
-  font-weight: 500;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
 }
 
 .buttons button:hover {
@@ -83,6 +159,7 @@
 
 .buttons button:first-child {
   border: none;
+  padding-left: 0.25rem;
 }
 
 .renderWrapperPercentage {
@@ -90,6 +167,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.renderWrapperPercentage .percentage {
+  margin: 0.063rem 5.75rem 0 0.688rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.renderWrapperPercentage .completed {
+  margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
 }
 
 .renderWrapperPercentage h1 {
@@ -101,8 +203,47 @@
   font-weight: 700;
 }
 
-.renderWrapperCurrentStateShape {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.currentChapterTitle {
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.chapterTitle {
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.btnUpdateProgress {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
